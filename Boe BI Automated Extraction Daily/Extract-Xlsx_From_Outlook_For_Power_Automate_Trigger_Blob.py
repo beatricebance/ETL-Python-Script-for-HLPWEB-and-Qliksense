@@ -10,9 +10,9 @@ if not blob_service_client or not container_client:
     raise Exception('BlobServiceClient or ContainerClient instance not found!')
 
 DOWNLOADS_FOLDER_PATH = os.path.join(os.path.expanduser("~"), "Downloads")
-BLOB_CONTAINER_PATH = "AME PPI M&T Business Intelligence Folder/QAdbFiles/SQ/SQ_Portal/SQ_SAP/Boe Bi/"
-FILE_IDENTIFIER = "_CONQ analysis _ details - Any fiscal year_"
-NEW_FILE_NAME = "CONQ analysis _ details - Any fiscal year_2023-2024.xlsx"
+BLOB_CONTAINER_PATH = os.getenv('BLOB_CONTAINER_PATH')
+FILE_IDENTIFIER = os.getenv('FILE_IDENTIFIER')
+NEW_FILE_NAME = os.getenv('NEW_FILE_NAME')
 
 def download_excel_file():
     # Launch Outlook

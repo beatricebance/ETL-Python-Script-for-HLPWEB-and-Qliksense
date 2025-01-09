@@ -29,9 +29,12 @@ pip install -r requirements.txt
 pip install ipykernel -U --force-reinstall
 pip freeze > requirements.txt "to add extensions to requirements files when you have install more"
 
-Create an environnement path on your computer so you don't have to change the path (PS :better use environnement variable path on your computer )
-DATA_PATH =  (Write the correct path from your computer)
-source_folder =  (Write the correct path from your computer)
+Create an environnement path on your computer so you don't have to change the path (PS :better use environnement variable path)
+DATA_PATH =  Write the correct path 
+source_folder =  Write the correct path
 PASSWORD_ALSTOM = Your PASSWORD_ALSTOM
 USERNAME = Your alstom username
-destination_folder_QUALITY_PORTAL = Write the correct path from your computer)
+destination_folder_QUALITY_PORTAL = Write the correct path 
+BLOB_CONTAINER_PATH = Write the correct path
+FILE_IDENTIFIER = Write the correct path
+NEW_FILE_NAME = Write the correct path
